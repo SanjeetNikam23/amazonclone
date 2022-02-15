@@ -59,15 +59,15 @@ class _ProductDetailState extends State<ProductDetail> {
                           fit: BoxFit.cover,
                         ),
                       ],
-                      width: MediaQuery.of(context).size.width*0.99,
-                       height: MediaQuery.of(context).size.height*0.46,
-                       initialPage: 0,
-                       indicatorColor: Colors.blue,
-                       indicatorBackgroundColor: Colors.grey,
-                       onPageChanged: (value) {
-                          print('Page changed: $value');
-                       },
-                       isLoop: true,
+                      width: MediaQuery.of(context).size.width * 0.99,
+                      height: MediaQuery.of(context).size.height * 0.46,
+                      initialPage: 0,
+                      indicatorColor: Colors.blue,
+                      indicatorBackgroundColor: Colors.grey,
+                      onPageChanged: (value) {
+                        print('Page changed: $value');
+                      },
+                      isLoop: true,
                     )
                   ],
                 ),
@@ -103,7 +103,8 @@ class _ProductDetailState extends State<ProductDetail> {
                     padding: EdgeInsets.all(8.0),
                     child: Text(
                       "Samsung Gear S3",
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
                   // ignore: prefer_const_constructors
@@ -116,7 +117,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       "\$${320}",
                       style: const TextStyle(
                           fontSize: 20,
-                          color:  Color.fromARGB(244, 36, 42, 75),
+                          color: Color.fromARGB(244, 36, 42, 75),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -238,8 +239,7 @@ class _ProductDetailState extends State<ProductDetail> {
                               Padding(
                                   padding: const EdgeInsets.only(left: 10),
                                   child: Container(
-                                      decoration:
-                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(5.0), border: Border.all(color: const Color.fromARGB(255, 87, 84, 84))),
+                                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(5.0), border: Border.all(color: const Color.fromARGB(255, 87, 84, 84))),
                                       height: 30,
                                       width: 30))
                             else if (value2 == "Black")
@@ -403,9 +403,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       border: Border.all(
                           color: const Color.fromARGB(255, 224, 224, 224))),
                   child: TextButton(
-                      onPressed: () {
-                        
-                      },
+                      onPressed: () {},
                       child: const Text(
                         'Add to Cart ',
                         style: TextStyle(
